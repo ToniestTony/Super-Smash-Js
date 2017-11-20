@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Fighting dudes</title>
+        <style>
+            canvas{
+                border: 1px solid black;
+            }
+            button{
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="can"></canvas>
+    </body>
+    <script src="jt_libv5.js"></script>
+    
+    <script src="game.js"></script>
+    <script src="entities.js"></script>
+    <script src="maps.js"></script>
+    <script src="menu.js"></script>
+    
+    
+    
+    <script>
+        
+        var app={
+            state:"menu",
+            preload:function(){
+                
+            },
+            setup:function(){
+                
+            },
+            update:function(){
+                if(this.state=="menu"){
+                    menu.update();
+                }else if(this.state=="game"){
+                    game.update();
+                }
+            }
+        }
+        
+        jt.canvas.init("can",800,600,30,["preload","setup","update","app"])
+    </script>
+</html>

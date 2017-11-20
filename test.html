@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Tony Level Maker</title>
+        <style>
+            canvas{
+                border: 1px solid black;
+            }
+            button{
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="can"></canvas>
+    </body>
+    <script src="jt_libv5.js"></script>
+    <script>
+        
+        var app={
+            preload:function(){
+                
+            },
+            setup:function(){
+                
+            },
+            update:function(){
+                jt.draw.bg("white");
+                jt.draw.rect(10,10,10,10,"black")
+                jt.draw.cam.w=30;
+                jt.draw.cam.h=30;
+                
+            }
+        }
+        
+        jt.canvas.init("can",600,400,60,["preload","setup","update","app"])
+    </script>
+</html>
