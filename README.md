@@ -1,5 +1,5 @@
 # Super-Smash-Js
-Inspired by super smash bros, this is a fighting game in development made in Javascript as a way to learn both fighting games and better learn Javascript
+Inspired by super smash bros, this is a fighting game in development made in Javascript as a way to learn both fighting games and better learn Javascript. You can test it here: toniesttony.github.io/super-smash-js
 
 
 ## Version 0.1
